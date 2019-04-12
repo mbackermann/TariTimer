@@ -4,8 +4,9 @@
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <style>
 
-body {
-  padding: 30px;
+html, body {
+  margin: 0 auto;
+  padding-top: 50px;
 }
 
 #timer {
@@ -26,6 +27,7 @@ body {
         }
 
         .content-wrapper {
+          margin-top: 50px;
           padding: 20px;
           text-align: center;
           background-color: #fff;
@@ -36,8 +38,8 @@ body {
           display: block;
         }
         .wrapper {
-          height: 1800%;
-          width: 1800%;
+          height: 180%;
+          width: 100%;
           left:0;
           right: 0;
           top: 0;
@@ -75,6 +77,21 @@ body {
       .tari {
         width: 80%;
         margin: 0 auto;
+      }
+
+      @media only screen and (max-width: 1024px){
+        html, body {
+          height: 100vh;
+          width: 100vw;
+          padding-top: 50px;
+        }
+        .content-wrapper {
+          width: 90%;
+        }
+
+        #timer {
+          font-size: 60px;
+        }
       }
     </style>
   </head>
