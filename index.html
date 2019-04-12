@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <title>Quanto tempo falta?</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <style>
+
+body {
+  padding: 30px;
+}
+
+#timer {
+  font-family: Orbitron;
+  text-align: center;
+  padding: 20px 30px;
+  margin: 0 auto;
+  color: #44C553;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+        h1 {
+          margin: 0;
+          font-family: arial;
+          text-align: center;
+          font-size: 80px;
+        }
+
+        .content-wrapper {
+          padding: 20px;
+          text-align: center;
+          background-color: #fff;
+          width: 500px;
+          position: relative;
+          z-index: 9999;
+          margin: 0 auto;
+          display: block;
+        }
+        .wrapper {
+          height: 1800%;
+          width: 1800%;
+          left:0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          position: absolute;
+          background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+          background-size: 1800% 1800%;
+
+          -webkit-animation: rainbow 18s ease infinite;
+          -z-animation: rainbow 18s ease infinite;
+          -o-animation: rainbow 18s ease infinite;
+          animation: rainbow 18s ease infinite;}
+
+      @-webkit-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+      }
+      @-moz-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+      }
+      @-o-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+      }
+      @keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+      }
+
+      .tari {
+        width: 80%;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+    </div>
+    <div class="content-wrapper">
+      <h1>Tari Timer</h1>
+      <div id="timer"></div>
+      <img src="tari.jpeg" class="tari">
+    </div>
+    <script src="timer.js"></script>
+  </body>
+</html>
